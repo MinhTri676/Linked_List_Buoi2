@@ -31,6 +31,12 @@ public class MyLinkedList {
             return;
         }else{
             Node tmp = head;
+            for (int i = 0; i < index - 1; i++) {
+                tmp = tmp.next;
+            }
+            Node nextNode = tmp.next;
+            tmp.next = newNode;
+            newNode.next = nextNode;
         }
     }
 }
