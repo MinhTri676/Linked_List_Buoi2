@@ -24,9 +24,9 @@ public class MyLinkedList {
         tmp.next = newNode;
     }
 
-    public void add(int data){
+    public void add(int data, int index){
         Node newNode = new Node(data);
-        ìf(index == 0){
+        if(index == 0){
             addFirst(data);
             return;
         }else{
